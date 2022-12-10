@@ -1,2 +1,2 @@
 # Multimedia
-Asignatura de Multimedia
+Asignatura de Multimedia donde se publicarán las practicas realizadas
