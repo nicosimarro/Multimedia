@@ -1,0 +1,217 @@
+/* Reset default margins and padding on the body element */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the fullscreen video container */
+.fullscreen-video-container {
+    /* Position the container relative to the page */
+    position: relative;
+
+    /* Set the container's height and width to the height and width of the viewport */
+    height: 100vh;
+    width: 100vw;
+
+    /* Hide any content that overflows the container */
+    overflow: hidden;
+}
+
+/* Style the fullscreen video */
+.fullscreen-video {
+    /* Position the video absolutely */
+    position: absolute;
+
+    /* Center the video within the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Scale the video to fill the container */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Style the options container */
+.options-container {
+    /* Position the container at the bottom of the page */
+    position: absolute;
+    bottom: 0;
+
+    /* Set the container's width to the width of the viewport */
+    width: 100%;
+
+    /* Set the container's background color to a semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* Display the container's content as a flex container */
+    display: flex;
+    flex-direction: column;
+
+    /* Align the items within the container to the center */
+    align-items: center;
+}
+
+/* Style captions */
+.caption {
+    /* Set the text color to white */
+    color: white;
+
+    /* Add padding around the text */
+    padding: 20px;
+
+    /* Set the font size to extra extra large */
+    font-size: xx-large;
+}
+
+/* Style the options container */
+.options {
+    /* Display the container as a flex container */
+    display: flex;
+
+    /* Set the font size to larger */
+    font-size: larger;
+
+    /* Space the items evenly within the container */
+    justify-content: space-around;
+}
+
+/* Style individual options */
+.option {
+    /* Set the text color to white */
+    color: white;
+
+    /* Add padding around the text */
+    padding: 20px;
+
+    /* Change the cursor to a pointer when hovering over the option */
+    cursor: pointer;
+}
+
+/* Style the notification container */
+.notification-container {
+    /* Position the container at the center of the page */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Set the container's width and height to 50% of the viewport's width and height */
+    width: 50%;
+    height: 50%;
+
+    /* Display the container's content as a flex container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Add a border radius and box shadow to the container */
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    /* Set the text color to white and the font size to 32px and bold */
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+
+    /* Hide the container by default */
+    visibility: hidden;
+
+    /* Set the container's opacity to 80% */
+    opacity: 0.8;
+}
+
+/* Style the success notification container */
+.success {
+    /* Set the container's background to a gradient from green to light green */
+    background: linear-gradient(to bottom right, green, lightgreen);
+}
+
+/* Style the wrong notification container */
+.wrong {
+    /* Set the container's background to a gradient from red to orange */
+    background: linear-gradient(to bottom right, red, orange);
+}
+
+/* Style the first floating box */
+.floating-box {
+    /* Position the box at a fixed position on the page */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    /* Set the box's background color to white */
+    background-color: white;
+
+    /* Add a border radius to the box */
+    border-radius: 10px;
+
+    /* Add padding to the box */
+    padding: 20px;
+
+    /* Add a box shadow to the box */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the second floating box */
+.floating-box2 {
+    /* Position the box at a fixed position on the page */
+    position: absolute;
+    top: 150px;
+    left: 20px;
+
+    /* Set the box's background color to white */
+    background-color: white;
+
+    /* Add a border radius to the box */
+    border-radius: 10px;
+
+    /* Add padding to the box */
+    padding: 20px;
+
+    /* Add a box shadow to the box */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the menu button */
+.buttonMenu {
+    /* Set the button's background color to green */
+    background-color: green;
+
+    /* Set the button's text color to white */
+    color: white;
+
+    /* Remove the button's border */
+    border: none;
+
+    /* Add padding to the button */
+    padding: 10px;
+
+    /* Add a border radius to the button */
+    border-radius: 5px;
+
+    /* Change the cursor to a pointer when hovering over the button */
+    cursor: pointer;
+}
+
+/* Style the timeline container */
+.timeline-container {
+    /* Position the container at the bottom of the page */
+    position: absolute;
+    bottom: 0;
+  
+    /* Set the container's width to the width of the viewport */
+    width: 100%;
+  
+    /* Display the container as a flex container */
+    display: flex;
+  }
+  
+  /* Style the timeline */
+  .timeline {
+    /* Set the timeline's height to 10px */
+    height: 10px;
+  
+    /* Set the timeline's background color to blue */
+    background-color: blue;
+  }

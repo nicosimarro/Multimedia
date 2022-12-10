@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multimedia project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="fullscreen-video-container">
+
+        <!-- Video/Audio players-->
+        <video id="video" class="fullscreen-video" src="./videos/0.mp4" autoplay muted loop></video>
+        <audio id="correct-sound" src="sounds/correct.wav"></audio>
+        <audio id="winning-sound" src="sounds/winning.wav"></audio>
+        <audio id="incorrect-sound" src="sounds/incorrect.mp3"></audio>
+
+        <!-- Titles and options-->
+        <div class="options-container">
+            <div class="caption" id="caption"></div>
+            <div class="options">
+                <div class="option" onclick="optionClicked(0)"></div>
+                <div class="option" onclick="optionClicked(1)"></div>
+                <div class="option" onclick="optionClicked(2)"></div>
+                <div class="option" onclick="optionClicked(3)"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Timeline handler-->
+    <div class="timeline-container">
+        <div class="timeline"></div>
+      </div>
+
+    <!-- Button for restarting the web -->
+    <div class="floating-box">
+        <button class="buttonMenu" onclick="restart()">Restart</button>
+    </div>
+
+    <!-- Button for pausing and resuming the video-->
+    <div class="floating-box2">
+        <button class="buttonMenu" id="buttonPause" onclick="pause()">Pause</button>
+    </div>
+
+    <!-- Notifications-->
+    <div class="notification-container success">Correct!</div>
+    <div class="notification-container wrong">Incorrect! Try again</div>
+
+    <!--Script of the web-->
+    <script src="script.js"></script>
+</body>
+
+</html>
